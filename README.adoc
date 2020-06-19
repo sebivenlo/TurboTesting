@@ -1,0 +1,44 @@
+= Improve the Test Experience
+
+Modern software development gravitates more and more to test driven development.
+In the TDD way of working it is important that the flow of _write test_, _see it fail_,
+_implement and refactor_,  is not impaired by slow tools or build processes.
+
+The current set of pure open source tools in the Java landscape contains
+
+* Apache Maven as build tool
+* JUnit 5 as test framework
+* and Apache NetBeans IDE as development environment.
+
+and maybe a few more, such as ecl/emma or jacoco and Apache Ant.
+
+This combination needs tuning to improve the overall developer experience.
+
+== Improvement Areas
+
+Some of the problem areas that need investigation and improvement are:
+
+*Slow Compile test cycle* Maven sometimes does too much or too complete, slowing down the compile to test cycle. E.g. if only one file has
+ changed, there is no need to recompile all files, which often occurs. +
+*Show Test Display name* The modern JUnit 5 test discovery facilities are left under utilized.
+ Due to a required change in the test report format, the JUnit test display name is
+  not yet used, which is a pity because it can be way more informative than is currently possible with just the test method name. +
+*Select and run single method* In the IDE, one should be able to select a single test methods,
+  and maybe even the parameterized instance thereof, and run and/or rerun it. For instance show a clickable element next to the
+  identified test methods in either the editor of the navigator or may even both. +
+*Show coverage report after run of single method* Often tests are improved to increase coverage. It will help if the coverage reports
+  can be updated after running a single method. Now things simply take to long.
+
+Successful execution of the project involves taking up contact with the developer groups of the various
+ open source products and work in cooperation. The intent is to contribute improvements, extensions or
+ plugins for the tools and products involved.
+
+== Expected products
+
+* Improved Test report (xml) format and usage recommendations that is compatible with the current *ant* based format with
+ as little breakage as possible, so the improve format may expect major acceptance.
+* Improvements in the way of handling test selection and presentation and reporting in both Maven and NetBeans IDE.
+* Plugins or extensions to NetBeans IDE.
+* User manuals and tutorials on how to improve the test experience with the above tools.
+
+All in all we expect a substantial contribution to open source developer tooling in the Java world.
