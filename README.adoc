@@ -6,11 +6,11 @@ _implement and refactor_,  is not impaired by slow tools or build processes.
 
 The current set of pure open source tools in the Java landscape contains
 
-* Apache Maven as build tool
-* JUnit 5 as test framework
-* and Apache NetBeans IDE as development environment.
+* http://maven.apache.org/[Apache Maven] as build tool
+* https://junit.org/junit5/[JUnit 5] as test framework
+* and https://netbeans.apache.org/[Apache NetBeans IDE] as development environment.
 
-and maybe a few more, such as ecl/emma or jacoco and Apache Ant.
+and maybe a few more, such as https://www.eclemma.org/jacoco/[ecl/emma-jacoco], https://assertj.github.io/doc/[AssertJ] and maybe even https://ant.apache.org/[Apache Ant].
 
 This combination needs tuning to improve the overall developer experience.
 
@@ -39,6 +39,6 @@ Successful execution of the project involves taking up contact with the develope
  as little breakage as possible, so the improve format may expect major acceptance.
 * Improvements in the way of handling test selection and presentation and reporting in both Maven and NetBeans IDE.
 * Plugins or extensions to NetBeans IDE.
-* User manuals and tutorials on how to improve the test experience with the above tools.
+* User manuals, cook books, and tutorials on how to improve the test experience with the above tools.
 
 All in all we expect a substantial contribution to open source developer tooling in the Java world.
